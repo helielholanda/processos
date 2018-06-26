@@ -1,0 +1,34 @@
+file:///home/ender/projects/controle_processos/app/views/processos/index.html.erb
+<p id="notice"><%= notice %></p>
+
+<h1>Processos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Número</th>
+      <th>Data</th>
+      <th>Solicitante</th>
+      <th>Data de recebimento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @processos.each do |processo| %>
+      <tr>
+        <td><%= processo.numero %></td>
+        <td><%= processo.data %></td>
+        <td><%= processo.solicitante %></td>
+        <td><%= processo.data_receb %></td>
+        <td><%= link_to 'Mostrar', processo %></td>
+        <td><%= link_to 'Editar', edit_processo_path(processo) %></td>
+        <td><%= link_to 'Deletar', processo, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "<button style='background: red;'>Add</button>".html_safe, new_processo_path %>

@@ -1,0 +1,20 @@
+[2018-06-06 17:04:45.699] [exthost1] [info] extension host started
+[2018-06-06 17:04:45.722] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:04:45.722] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-06 17:04:46.294] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:04:46.294] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-06-06 17:04:46.725] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:04:46.725] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-06 17:04:46.756] [exthost1] [info] eager extensions activated
+[2018-06-06 17:05:02.549] [exthost1] [info] extension host started
+[2018-06-06 17:05:02.584] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:05:02.584] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/out/extension
+[2018-06-06 17:05:02.651] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:05:02.651] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/out/main
+[2018-06-06 17:05:02.835] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-06 17:05:02.835] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-06-06 17:05:02.881] [exthost1] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2018-06-06 17:05:02.881] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/npm/out/main
+[2018-06-06 17:05:02.987] [exthost1] [info] eager extensions activated
+[2018-06-06 17:05:16.113] [exthost1] [info] ExtensionService#_doActivateExtension rebornix.Ruby {"startup":false,"activationEvent":"onLanguage:erb"}
+[2018-06-06 17:05:16.113] [exthost1] [info] ExtensionService#loadCommonJSModule /home/ender/.vscode/extensions/rebornix.ruby-0.18.0/out/ruby.js

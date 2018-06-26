@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Número:</strong>
+  <%= @processo.numero %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @processo.data %>
+</p>
+
+<p>
+  <strong>Solicitante:</strong>
+  <%= @processo.solicitante %>
+</p>
+
+<p>
+  <strong>Data de recebimento:</strong>
+  <%= @processo.data_receb %>
+</p>
+<div class="btn group">
+<%= link_to 'Editar', edit_processo_path(@processo), class: 'btn btn-secondary btn-outline-dark' %> |
+<%= link_to 'Voltar', processos_path, class: 'btn btn-secondary btn-outline-danger' %>
+</div>

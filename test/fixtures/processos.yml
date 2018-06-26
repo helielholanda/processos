@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: MyString
+  data: 2018-06-06
+  solicitante: MyString
+  data_receb: 2018-06-06 11:37:51
+
+two:
+  numero: MyString
+  data: 2018-06-06
+  solicitante: MyString
+  data_receb: 2018-06-06 11:37:51

@@ -1,0 +1,52 @@
+<script>
+  $(document).ready(function(){
+    $('#processo_numero').mask('9-9');
+  });
+</script>
+<%= form_with(model: processo, local: true) do |form| %>
+  <% if processo.errors.any? %>
+    <div id="error_explanation">
+      <%# <h2>= pluralize(processo.errors.count, "error") prohibited this processo from being saved:</h2> %>
+      <ul>
+        <% if processo.errors.full_messages %>
+          <div class="alert alert-danger" role="alert">
+            <li>Todos os campos devem ser preenchidos.<%#= message %></li>
+          </div>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-2">
+      <%= form.label :numero, "Número do processo" %>
+      <%= form.text_field :numero, placeholder: "Ex: 2477487/2018", class: "form-control" %>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-2">
+      <%= form.label :data, "Data" %>
+      <%= form.text_field :data, placeholder: "99/99/9999", class: "form-control" %>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-4">
+      <%= form.label :solicitante, "Solicitante"%>
+      <%= form.text_field :solicitante, placeholder:"Ex: Jailson Mendes", class: "form-control" %>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-2">
+      <%= form.label :data_receb, "Data de recebimento" %>
+      <%= form.text_field :data_receb, placeholder: "99/99/9999", class: "form-control" %>
+    </div>
+  </div>
+  <br/>
+  <div class="actions">
+    <%= form.submit "Salvar", class: 'btn btn-outline-success'  %>
+  </div>
+  <br/>
+<% end %>

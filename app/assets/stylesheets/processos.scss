@@ -1,0 +1,13 @@
+// Place all the styles related to the processos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+.mybutton {
+    background: #6d0101; 
+    color: white; 
+    border: none; 
+    box-shadow: 10px 10px 10px #777;
+}

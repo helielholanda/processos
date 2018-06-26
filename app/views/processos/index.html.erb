@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<body style="background-color:#ffffff;">
+<h1>Processos</h1>
+<table class="table table-dark";>
+  <thead>
+    <tr>
+      <th>Número</th>
+      <th>Data</th>
+      <th>Solicitante</th>
+      <th>Data de recebimento</th>
+      <th colspan="3">Opções</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @processos.each do |processo| %>
+      <tr>
+        <td><%= processo.numero %></td>
+        <td><%= processo.data %></td>
+        <td><%= processo.solicitante %></td>
+        <td><%= processo.data_receb %></td>
+        <td><%= link_to 'Mostrar', processo, style:"color: " %></td>
+        <td><%= link_to 'Editar', edit_processo_path(processo) %></td>
+        <td><%= link_to 'Deletar', processo, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Criar novo processo', new_processo_path, class:'btn btn-outline-success' %>
